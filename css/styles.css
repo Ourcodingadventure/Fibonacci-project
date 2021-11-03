@@ -1,0 +1,14 @@
+input {
+  width: 10%;
+}
+#results {
+  margin-left: 10px;
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: 1.2rem;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

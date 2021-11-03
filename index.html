@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Document</title>
+  </head>
+  <body class="jumbotron">
+    <div class="container">
+      <h1 class="mt-5 mx-5">Fibonacci Calculator</h1>
+      <div class="d-flex h-25 align-items-center">
+        <h5 class="ms-5 me-2 ml-0">The fibonacci of</h5>
+        <input
+          type="number"
+          id="inputField"
+          class="h-25 border-secondary rounded"
+          type="text"
+          placeholder="#"
+        />
+        <button
+          id="clickMe"
+          class="btn-sml rounded btn-primary mx-2 h-25 searchButton"
+        >
+          is
+        </button>
+        <div class="w-25" id="results"></div>
+      </div>
+      <div class="w-50 flex-wrap mx-5 d-flex">
+        <input
+          class="form-check-input me-3 mb-5"
+          type="checkbox"
+          id="save-calculation"
+        />
+        <label class="form-check-label" for="flexCheckDefault">
+          Save Calculation
+        </label>
+        <div class="alerts h-25">
+          <div
+            id="alert"
+            class="h-25 mx-5 alert-danger d-none"
+            role="alert"
+          ></div>
+        </div>
+      </div>
+      <div class="results mx-5">
+        <div id="results-title">
+          <h1>Results</h1>
+        </div>
+        <select
+          class="form-select-sm rounded border-secondary"
+          id="sortResults"
+          aria-label=".form-select-sm"
+        >
+          <option value="sb" selected>Sort By</option>
+          <hr />
+          <option class="border-bottom border-dark" value="na">
+            Number Asc
+          </option>
+          <option value="nd">Number Desc</option>
+          <option value="da">Date Asc</option>
+          <option value="ds">Date Desc</option>
+        </select>
+        <div id="prevResults"></div>
+      </div>
+    </div>
+    <script src="dist/index.js"></script>
+  </body>
+</html>
